@@ -27,7 +27,7 @@ function App() {
             <br /><br />Technologies I've used along the way include: <br /><br /><strong>JavaScript (ES6+), TypeScript, React, Redux, Apollo GraphQL, JEST</strong>.
             </Para>
           </div>
-          <ProfileImage alt="image of kevin" src="https://res.cloudinary.com/kvneze/image/upload/v1603829344/kvneze.jpg" />
+          <ProfileImage alt="image of kevin" src="https://res.cloudinary.com/kvneze/image/upload/v1605909512/kevineze_srapmf.jpg" />
         </Flex>
       </Section>
       <Section id="experience" heading="Experience">
