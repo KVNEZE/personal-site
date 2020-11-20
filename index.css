@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app {
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
+}
+
+@media (max-width : 360px) {
+  h1 {
+    font-size: 2em;
+  }
+  i {
+    font-size: 2em;
+  }
+}
+
+@media (min-width : 361px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  i {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  i {
+    font-size: 2.5em;
+  }
+}
+
+@media (min-width : 1024px) {
+  h1 {
+    font-size: 5em;
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.2em;
+  }
+  i {
+    font-size: 3em;
+  }
+}

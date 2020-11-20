@@ -13,7 +13,7 @@ const Section: FC<Props> = ({id, color, heading, headingColor = "black", childre
   return (
     <StyledSection color={color}>
       <ContentWrapper>
-        {heading && <Heading id={id} color={headingColor} marginBottom="30px">{heading}</Heading>}
+        {heading && <Heading id={id} color={headingColor}>{heading}</Heading>}
         {children}
       </ContentWrapper>
     </StyledSection>
