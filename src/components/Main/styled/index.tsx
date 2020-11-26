@@ -78,7 +78,7 @@ export const LinkedInIcon = styled.i.attrs({
   margin-right: 50px;
 
   &:hover {
-    color: orange;
+    color: #0073b1;
     cursor: pointer;
   }
 `
@@ -91,7 +91,7 @@ export const GitHubIcon = styled.i.attrs({
   margin-right: 50px;
 
   &:hover {
-    color: orange;
+    color: #5c5c5c;
   }
 `
 
@@ -102,6 +102,6 @@ export const CodePenIcon = styled.i.attrs({
   margin-right: 50px;
 
   &:hover {
-    color: orange;
+    color: #5c5c5c;
   }
 `

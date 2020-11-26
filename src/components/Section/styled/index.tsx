@@ -71,21 +71,32 @@ export const StyledSection = styled.section<SectionProps>`
 export const Flex = styled.div<FlexProps>`
   display: flex;
 
-  ${({direction}) => direction && `flex-direction: ${direction}`};
-  ${({justifyContent}) => justifyContent && `justify-content: ${justifyContent}`};
-  ${({alignItems}) => alignItems && `align-items: ${alignItems}`};
-  ${({responsiveDirection}) => responsiveDirection && `
+  ${({direction}) => direction && css`
+    flex-direction: ${direction};
+  `}
+
+  ${({justifyContent}) => justifyContent && css`
+    justify-content: ${justifyContent};
+  `}
+
+  ${({alignItems}) => alignItems && css`
+    align-items: ${alignItems};
+  `}
+
+  ${({responsiveDirection}) => responsiveDirection && css`
     flex-direction: column;
     @media (min-width: 1224px) {
       flex-direction: row;
     }
   `}
-  ${({responsiveDirectionReverse}) => responsiveDirectionReverse && `
+
+  ${({responsiveDirectionReverse}) => responsiveDirectionReverse && css`
     flex-direction: column-reverse;
     @media (min-width: 1224px) {
       flex-direction: row;
     }
   `}
+
   ${spacingStyles}
 `
 
@@ -122,45 +133,31 @@ export const Image = styled.img<ImageProps>`
 `
 
 export const Heading = styled.h2<HeadingProps>`
-  ${({color}) => css`color: ${color};`}
+  ${({color}) => css`
+    color: ${color};
+  `}
+
   ${spacingStyles}
 `
 
 export const SubHeading = styled.h3<SubHeadingProps>`
-  ${({color}) => color && css`color: ${color};`}
+  ${({color}) => color && css`
+    color: ${color};
+  `}
+
   ${spacingStyles}
 `
 
 export const Para = styled.p<ParaProps>`
-  ${({color}) => color && css`color: ${color};`}
-  ${({width}) => width && css`width: ${width};`}
+  ${({color}) => color && css`
+    color: ${color};
+  `}
+
+  ${({width}) => width && css`
+    width: ${width};
+  `}
+
   ${spacingStyles}
-`
-
-export const LinkedInIcon = styled.i.attrs({
-  className: "fab fa-linkedin"
-})`
-  font-size: 3em;
-  color: #363946;
-  margin-right: 25px;
-
-  &:hover {
-    color: #0072b1;
-    cursor: pointer;
-  }
-`
-
-export const EmailIcon = styled.i.attrs({
-  className: "far fa-envelope"
-})`
-  font-size: 3em;
-  color: #FFF;
-  margin-right: 20px;
-
-  &:hover {
-    color: #b23121;
-    cursor: pointer;
-  }
 `
 
 export const NoStyleAnchor = styled.a.attrs({
@@ -168,6 +165,7 @@ export const NoStyleAnchor = styled.a.attrs({
 })<AnchorProps>`
   color: inherit;
   text-decoration: none;
+
   ${({color}) => color && css`
     color: ${color};
   `}

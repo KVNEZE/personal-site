@@ -47,7 +47,7 @@ export const NavItem = styled.li`
     text-decoration: none;
     color: #FFF;
     font-weight: 400;
-    font-size: .8em;
+    font-size: .9em;
   }
 
   a:hover {

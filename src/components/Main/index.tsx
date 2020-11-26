@@ -2,7 +2,7 @@ import React, {FC} from "react"
 
 import {FlexMain, StyledSpan, ContentWrapper, StyledH1, IconsWrapper, CodePenIcon, LinkedInIcon, GitHubIcon, NoStyleAnchor} from "./styled"
 
-const Main: FC<{}> = () => {
+const Main: FC = () => {
   return (
     <FlexMain>
       <ContentWrapper>
