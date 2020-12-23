@@ -6,20 +6,13 @@ export const FlexMain = styled.main`
   background-color: #0a192f;
   color: #FFF;
   margin-top: -1px;
+  height: 70vh;
 
-  @media (max-width: 400px) {
-    height: 70vh;
-  }
-
-  @media (min-width: 401px) and (max-width: 600px) {
-    height: 70vh;
-  }
-
-  @media (min-width: 601px) and (max-width: 700px) {
+  @media (min-width: 600px) {
     height: 60vh;
   }
 
-  @media (min-width: 701px) {
+  @media (min-width: 700px) {
     height: 80vh;
   }
 `
@@ -27,16 +20,13 @@ export const FlexMain = styled.main`
 export const ContentWrapper = styled.div`
   position relative;
   top: 10%;
+  padding-left: 40px;
 
-  @media (max-width: 400px) {
-    padding-left: 40px;
-  }
-
-  @media (min-width: 401px) and (max-width: 700px) {
+  @media (min-width: 400px) {
     padding: 40px;
   }
 
-  @media (min-width: 701px) {
+  @media (min-width: 700px) {
     width: 60%;
     margin: 0 auto;
     padding: 20px;

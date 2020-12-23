@@ -45,8 +45,8 @@ interface FlexProps extends SpacingProps {
   justifyContent?: "space-between" | "space-around" | "center" | "flex-start" | "flex-end",
   alignItems?: "space-between" | "space-around" | "center" | "flex-start" | "flex-end",
   direction?: "row" | "column" | "row-reverse" | "column-reverse",
-  responsiveDirection?: boolean,
-  responsiveDirectionReverse?: boolean
+  responsive?: boolean,
+  responsiveReverse?: boolean
 }
 
 const spacingStyles = css<SpacingProps>`
@@ -83,15 +83,17 @@ export const Flex = styled.div<FlexProps>`
     align-items: ${alignItems};
   `}
 
-  ${({responsiveDirection}) => responsiveDirection && css`
+  ${({responsive}) => responsive && css`
     flex-direction: column;
+
     @media (min-width: 1224px) {
       flex-direction: row;
     }
   `}
 
-  ${({responsiveDirectionReverse}) => responsiveDirectionReverse && css`
+  ${({responsiveReverse}) => responsiveReverse && css`
     flex-direction: column-reverse;
+
     @media (min-width: 1224px) {
       flex-direction: row;
     }
@@ -172,20 +174,24 @@ export const NoStyleAnchor = styled.a.attrs({
 
   ${({underlineOnHover}) => underlineOnHover && css`
     &:hover {
-      border-bottom: 3px solid #00adee;
+      border-bottom: 3px solid #00ADEE;
     }
   `}
 `
 
-export const StyledAnchor = styled.a`
+export const FooterLink = styled.a`
   background-color: transparent;
   color: #FFF;
   text-decoration: none;
-  font-size: 1em;
-  padding: 15px 25px;
-  border: 1px solid #FFF;
+  font-size: 1.25em;
+  padding: 15px 30px;
+  border: 2px solid #FFF;
   border-radius: 5px;
   cursor: pointer;
   display: inline-block;
   margin-top: 10px;
+
+  &:hover {
+    border-color: orange;
+  }
 `
