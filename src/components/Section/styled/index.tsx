@@ -1,53 +1,15 @@
 import styled, {css} from "styled-components"
 
-interface SpacingProps {
-  margin?: string,
-  marginTop?: string,
-  marginBottom?: string,
-  marginLeft?: string,
-  marginRight?: string,
-  padding?: string,
-  paddingTop?: string,
-  paddingBottom?: string,
-  paddingLeft?: string,
-  paddingRight?: string
-}
-
-interface SectionProps {
-  color?: string,
-  content?: string
-}
-
-interface HeadingProps extends SpacingProps {
-  color?: string
-}
-
-interface SubHeadingProps extends SpacingProps {
-  url?: boolean,
-  color?: string
-}
-
-interface ParaProps extends SpacingProps {
-  color?: string,
-  width?: string
-}
-
-interface ImageProps {
-  responsive?: boolean
-}
-
-interface AnchorProps {
-  underlineOnHover?: boolean,
-  color?: string
-}
-
-interface FlexProps extends SpacingProps {
-  justifyContent?: "space-between" | "space-around" | "center" | "flex-start" | "flex-end",
-  alignItems?: "space-between" | "space-around" | "center" | "flex-start" | "flex-end",
-  direction?: "row" | "column" | "row-reverse" | "column-reverse",
-  responsive?: boolean,
-  responsiveReverse?: boolean
-}
+import {
+  FlexProps,
+  SpacingProps,
+  AnchorProps,
+  SectionProps,
+  HeadingProps,
+  SubHeadingProps,
+  ImageProps,
+  ParaProps
+} from "../types";
 
 const spacingStyles = css<SpacingProps>`
   ${({margin}) => margin && `margin: ${margin};`}
@@ -106,7 +68,7 @@ export const ContentWrapper = styled.div`
   padding: 40px;
 
   @media (min-width: 701px) {
-    padding: 80px;
+    padding: 70px;
     width: 60%;
     margin: 0 auto;
   }
@@ -117,8 +79,9 @@ export const ContentWrapper = styled.div`
 `
 
 export const ProfileImage = styled.img`
+  object-fit: contain;
   border-radius: 5px;
-  width: 100%;
+  width: 80%;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
 
   @media (min-width: 701px) {
@@ -132,6 +95,10 @@ export const Image = styled.img<ImageProps>`
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
   margin-bottom: 20px;
   width: 100%;
+
+  @media (min-width: 701px) {
+    width: 80%;
+  }
 `
 
 export const Heading = styled.h2<HeadingProps>`
@@ -185,8 +152,8 @@ export const FooterLink = styled.a`
   text-decoration: none;
   font-size: 1.25em;
   padding: 15px 30px;
-  border: 2px solid #FFF;
-  border-radius: 5px;
+  border: 3px solid #FFF;
+  border-radius: 30px;
   cursor: pointer;
   display: inline-block;
   margin-top: 10px;
@@ -195,3 +162,10 @@ export const FooterLink = styled.a`
     border-color: orange;
   }
 `
+
+export const StyledUl = styled.ul`
+  li {
+    margin-left: 20px;
+    font-size: 1.2em;
+  }
+`;

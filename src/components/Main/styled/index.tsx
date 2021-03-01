@@ -20,7 +20,7 @@ export const FlexMain = styled.main`
 export const ContentWrapper = styled.div`
   position relative;
   top: 10%;
-  padding-left: 40px;
+  padding: 0 40px;
 
   @media (min-width: 400px) {
     padding: 40px;
@@ -35,6 +35,7 @@ export const ContentWrapper = styled.div`
 
 export const StyledH1 = styled.h1`
   color: #F8F8F8;
+  user-select: none;
 `
 
 export const NoStyleAnchor = styled.a.attrs({

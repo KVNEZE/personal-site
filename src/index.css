@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
 .app {
@@ -12,17 +13,8 @@ html {
   overflow: hidden;
 }
 
-body {
-  font-family: "Sora", sans-serif;
-}
-
 p {
-  font-family: "Lato", sans-serif;
   letter-spacing: 1px;
-}
-
-h1 {
-  font-size: 2.5em;
 }
 
 i {
@@ -33,14 +25,21 @@ i {
   h1 {
     font-size: 3em;
   }
+
   h2 {
+    font-size: 2em;
+  }
+
+  h3 {
     font-size: 1.5em;
   }
+
   p {
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
+
   i {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 }
 
@@ -48,34 +47,44 @@ i {
   h1 {
     font-size: 4em;
   }
+
   h2 {
     font-size: 2.5em;
   }
+
   h3 {
     font-size: 2em;
   }
+
   p {
     font-size: 1.5em;
   }
+
   i {
-    font-size: 4em;
+    font-size: 3em;
   }
+
 }
 
 @media (min-width : 1024px) {
   h1 {
     font-size: 5em;
   }
+
   h2 {
     font-size: 2.5em;
   }
+
   h3 {
     font-size: 1.5em;
   }
+
   p {
     font-size: 1.2em;
   }
+
   i {
-    font-size: 4em;
+    font-size: 3em;
   }
+
 }

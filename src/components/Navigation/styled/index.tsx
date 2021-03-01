@@ -33,6 +33,7 @@ export const NavItemWrapper = styled.div`
 
 export const Logo = styled.img`
   width: 200px;
+  pointer-events: none;
 `
 
 export const NavItem = styled.li`
