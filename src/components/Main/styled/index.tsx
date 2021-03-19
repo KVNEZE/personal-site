@@ -9,7 +9,7 @@ export const FlexMain = styled.main`
   height: 50vh;
   
   @media (min-width: 768px) {
-    height: 80vh;
+    height: 85vh;
   }
   
 `
