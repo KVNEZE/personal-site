@@ -9,11 +9,11 @@ interface Props {
   headingColor?: string
 }
 
-const Section: FC<Props> = ({id, color, heading, headingColor = "black", children}) => {
+const Section: FC<Props> = ({id, color, heading, children}) => {
   return (
     <StyledSection color={color}>
       <ContentWrapper>
-        {heading && <Heading id={id} color={headingColor} marginBottom="30px">{heading}</Heading>}
+        {heading && <Heading id={id} marginBottom="30px">{heading}</Heading>}
         {children}
       </ContentWrapper>
     </StyledSection>

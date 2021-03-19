@@ -32,6 +32,7 @@ export interface ParaProps extends SpacingProps {
 
 export interface ImageProps {
   responsive?: boolean
+  width?: string
 }
 
 export interface AnchorProps {

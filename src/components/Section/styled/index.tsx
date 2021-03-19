@@ -48,7 +48,7 @@ export const Flex = styled.div<FlexProps>`
   ${({responsive}) => responsive && css`
     flex-direction: column;
 
-    @media (min-width: 1224px) {
+    @media (min-width: 960px) {
       flex-direction: row;
     }
   `}
@@ -56,7 +56,7 @@ export const Flex = styled.div<FlexProps>`
   ${({responsiveReverse}) => responsiveReverse && css`
     flex-direction: column-reverse;
 
-    @media (min-width: 1224px) {
+    @media (min-width: 960px) {
       flex-direction: row;
     }
   `}
@@ -65,10 +65,9 @@ export const Flex = styled.div<FlexProps>`
 `
 
 export const ContentWrapper = styled.div`
-  padding: 40px;
+  padding: 35px;
 
-  @media (min-width: 701px) {
-    padding: 70px;
+  @media (min-width: 768px) {
     width: 60%;
     margin: 0 auto;
   }
@@ -79,25 +78,26 @@ export const ContentWrapper = styled.div`
 `
 
 export const ProfileImage = styled.img`
-  object-fit: contain;
-  border-radius: 5px;
-  width: 80%;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 50%;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
-
-  @media (min-width: 701px) {
-    width: 350px;
-  }
+  align-self: center;
 `
 
 export const Image = styled.img<ImageProps>`
+  ${({width}) => css`
+    width: ${width || "100%"};
+  `}
   object-fit: cover;
   border-radius: 5px;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
   margin-bottom: 20px;
-  width: 100%;
 
-  @media (min-width: 701px) {
-    width: 80%;
+  @media (min-width: 768px) {
+    width: 70%
   }
 `
 
@@ -150,10 +150,10 @@ export const FooterLink = styled.a`
   background-color: transparent;
   color: #FFF;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding: 15px 30px;
   border: 3px solid #FFF;
-  border-radius: 30px;
+  border-radius: 40px;
   cursor: pointer;
   display: inline-block;
   margin-top: 10px;

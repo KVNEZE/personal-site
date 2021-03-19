@@ -3,9 +3,13 @@
   padding: 0;
 }
 
-html {
+:root {
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
+
+  --black: #232b2b;
+  --white: #f8f8f8;
+  --darkBlue: #0a192f;
 }
 
 .app {
@@ -13,78 +17,36 @@ html {
   overflow: hidden;
 }
 
+h1 {
+  font-size: 2.2rem;
+  color: var(--black);
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+
+h3 {
+  font-size: 1.17rem;
+  color: var(--black);
+}
+
 p {
-  letter-spacing: 1px;
+  font-size: 1rem;
+  color: var(--black);
 }
 
 i {
-  font-size: 2em;
-}
-
-@media (min-width : 361px) {
-  h1 {
-    font-size: 3em;
-  }
-
-  h2 {
-    font-size: 2em;
-  }
-
-  h3 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1.25em;
-  }
-
-  i {
-    font-size: 2em;
-  }
+  font-size: 2rem;
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 4em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 1.5em;
+    font-size: 4rem;
   }
 
   i {
-    font-size: 3em;
+    font-size: 3rem;
   }
-
-}
-
-@media (min-width : 1024px) {
-  h1 {
-    font-size: 5em;
-  }
-
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1.2em;
-  }
-
-  i {
-    font-size: 3em;
-  }
-
 }

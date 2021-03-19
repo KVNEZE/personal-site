@@ -1,41 +1,35 @@
-import styled from "styled-components"
+import styled, {css} from "styled-components"
 
 export const FlexMain = styled.main`
   line-height: 1.6; 
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%);
-  background-color: #0a192f;
-  color: #FFF;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  background-color: var(--darkBlue);
+  color: var(--white);
   margin-top: -1px;
-  height: 70vh;
-
-  @media (min-width: 600px) {
-    height: 60vh;
-  }
-
-  @media (min-width: 700px) {
+  height: 50vh;
+  
+  @media (min-width: 768px) {
     height: 80vh;
   }
+  
 `
 
 export const ContentWrapper = styled.div`
-  position relative;
-  top: 10%;
-  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 40px;
 
-  @media (min-width: 400px) {
-    padding: 40px;
+  @media (min-width: 768px) {
+    padding-top: 150px;
   }
 
-  @media (min-width: 700px) {
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px;
-  }
 `
 
-export const StyledH1 = styled.h1`
-  color: #F8F8F8;
+export const MainH1 = styled.h1`
+  color: var(--white);
   user-select: none;
+  margin-bottom: 10px;
 `
 
 export const NoStyleAnchor = styled.a.attrs({
@@ -44,30 +38,34 @@ export const NoStyleAnchor = styled.a.attrs({
   color: inherit;
 `
 
-export const StyledSpan = styled.span`
+export const AnimationSpan = styled.span`
   animation: underline 10s cubic-bezier(1,0,0,1) infinite;
   animation-direction: alternate;
 
   @keyframes underline {
-    0% { border-bottom: 6px solid orange; }
-    20% { border-bottom: 6px solid #fff; }  
-    40% { border-bottom: 6px solid #ff6363; }
-    60% { border-bottom: 6px solid #a187e8; }
-    80% { border-bottom: 6px solid #94e1ff; }
-    100% { border-bottom: 6px solid #f5ea18; }
+    0% { border-bottom: 4px solid orange; }
+    20% { border-bottom: 4px solid var(--white); }  
+    40% { border-bottom: 4px solid #ff6363; }
+    60% { border-bottom: 4px solid #a187e8; }
+    80% { border-bottom: 4px solid #94e1ff; }
+    100% { border-bottom: 4px solid #f5ea18; }
 }
 `
 
 export const IconsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
+`
+
+const sharedIconStyles = css`
+  margin-right: 50px;
 `
 
 export const LinkedInIcon = styled.i.attrs({
   className: "fab fa-linkedin"
 })`
-
-  margin-right: 50px;
-
+  ${sharedIconStyles}
   &:hover {
     color: #0073b1;
     cursor: pointer;
@@ -77,10 +75,8 @@ export const LinkedInIcon = styled.i.attrs({
 export const GitHubIcon = styled.i.attrs({
   className: "fab fa-github"
 })`
-
-  color: #fff;
-  margin-right: 50px;
-
+  ${sharedIconStyles}
+  color: var(--white);
   &:hover {
     color: #5c5c5c;
   }
@@ -89,9 +85,7 @@ export const GitHubIcon = styled.i.attrs({
 export const CodePenIcon = styled.i.attrs({
   className: "fab fa-codepen"
 })`
-
-  margin-right: 50px;
-
+  ${sharedIconStyles}
   &:hover {
     color: #5c5c5c;
   }
