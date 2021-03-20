@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -41,6 +42,10 @@ i {
   font-size: 2rem;
 }
 
+ul {
+  font-size: 1rem;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 4rem;
@@ -48,5 +53,31 @@ i {
 
   i {
     font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  i {
+    font-size: 4rem;
+  }
+
+  ul {
+    font-size: 1.2rem;
   }
 }

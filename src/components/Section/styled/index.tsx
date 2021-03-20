@@ -78,13 +78,14 @@ export const ContentWrapper = styled.div`
 `
 
 export const ProfileImage = styled.img`
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   overflow: hidden;
   object-fit: cover;
   border-radius: 50%;
   filter: drop-shadow(0 0 3px rgba(0,0,0,0.2));
   align-self: center;
+  margin-bottom: 15px;
 `
 
 export const Image = styled.img<ImageProps>`

@@ -43,12 +43,18 @@ export const NavItem = styled.li`
 
   a {
     text-decoration: none;
-    color: #FFF;
+    color: var(--white);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 1280px) {
+    a {
+      font-size: 1.5rem;
+    }
   }
 
   a:hover {
-    border-bottom: 3px solid #FFF;
+    border-bottom: 3px solid var(--white);
   }
 `

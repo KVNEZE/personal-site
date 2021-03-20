@@ -21,7 +21,7 @@ export const ContentWrapper = styled.div`
   padding-top: 40px;
 
   @media (min-width: 768px) {
-    padding-top: 150px;
+    padding-top: 120px;
   }
 
 `
@@ -55,17 +55,12 @@ export const AnimationSpan = styled.span`
 export const IconsWrapper = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-`
-
-const sharedIconStyles = css`
-  margin-right: 50px;
 `
 
 export const LinkedInIcon = styled.i.attrs({
   className: "fab fa-linkedin"
 })`
-  ${sharedIconStyles}
+  margin: 0 25px;
   &:hover {
     color: #0073b1;
     cursor: pointer;
@@ -75,7 +70,7 @@ export const LinkedInIcon = styled.i.attrs({
 export const GitHubIcon = styled.i.attrs({
   className: "fab fa-github"
 })`
-  ${sharedIconStyles}
+  margin: 0 25px;
   color: var(--white);
   &:hover {
     color: #5c5c5c;
@@ -85,7 +80,7 @@ export const GitHubIcon = styled.i.attrs({
 export const CodePenIcon = styled.i.attrs({
   className: "fab fa-codepen"
 })`
-  ${sharedIconStyles}
+  margin: 0 25px;
   &:hover {
     color: #5c5c5c;
   }

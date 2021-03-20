@@ -27,7 +27,7 @@ function App() {
           <Flex responsive>
             <div style={{flex: 1}}>
               <Heading marginBottom="30px">About me</Heading>
-              <Para width="95%" marginBottom="30px">
+              <Para width="100%" marginBottom="30px">
                 I have <strong>2 years of commercial experience</strong> where I've had the opportunity to work on both internal and user-facing features.<br /><br />
               
                 The ability to write code that solves problems and provides intuitive experiences is something I continue to enjoy as I
@@ -38,7 +38,16 @@ function App() {
             </div>
             <ProfileImage alt="image of kevin" src="https://res.cloudinary.com/kvneze/image/upload/v1605909512/kevineze_srapmf.jpg" />
           </Flex>
-          <br /><br />Skills I've gained along the way include: <br /><br /><strong>JavaScript (ES6+), TypeScript, React, Redux, Apollo GraphQL, JEST, Cypress</strong>
+          <Para>Skills I've gained along the way include:</Para>
+          <ul style={{listStyle: "none", fontWeight: "bold"}}><br />
+            <li>JavaScript (ES6+)</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Apollo GraphQL</li>
+            <li>JEST</li>
+            <li>Cypress</li>
+          </ul>
         </ContentWrapper>
       </section>
       <section id="experience">
