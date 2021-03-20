@@ -60,21 +60,21 @@ function App() {
         <Flex direction="column" margin="60px 0">
           <Image alt="Perkbox contact preferences" src="https://res.cloudinary.com/kvneze/image/upload/v1614556675/Screenshot_2021-02-12_at_20.46.58_vskt1u.png" />
           <SubHeading marginBottom="10px">Contact Preferences </SubHeading>
-          <Para>
+          <Para marginBottom="20px">
             A page that gives the user more control of the content they want to recieve, on their preferred method of communication.
           </Para>
         </Flex>
         <Flex direction="column" margin="60px 0">
           <Image alt="Mark a redeemed perk as used" responsive src="https://res.cloudinary.com/kvneze/image/upload/c_scale,w_800/v1603829157/markAsUsed_ghhmjt.png" />
           <SubHeading marginBottom="10px">Mark a perk as used </SubHeading>
-          <Para>
+          <Para marginBottom="20px">
             A feature request that allows redeemed perks to be marked as 'used', in order to declutter your redemption history.
           </Para>
         </Flex>
         <Flex direction="column">
           <Image alt="Open value voucher redemption flow" responsive src="https://res.cloudinary.com/kvneze/image/upload/c_scale,w_800/v1603829157/openValue_q7gcrc.png" />
           <SubHeading marginBottom="10px">Open value voucher redemptions </SubHeading>
-          <Para>
+          <Para marginBottom="20px">
             The ability to specify exact value amounts when redeeming gift vouchers, using the WeGift API.
           </Para>
         </Flex>

@@ -29,7 +29,6 @@ export const ContentWrapper = styled.div`
 export const MainH1 = styled.h1`
   color: var(--white);
   user-select: none;
-  margin-bottom: 10px;
 `
 
 export const NoStyleAnchor = styled.a.attrs({
@@ -55,6 +54,7 @@ export const AnimationSpan = styled.span`
 export const IconsWrapper = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 25px;
 `
 
 export const LinkedInIcon = styled.i.attrs({

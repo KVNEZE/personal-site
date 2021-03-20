@@ -149,18 +149,20 @@ export const NoStyleAnchor = styled.a.attrs({
 
 export const FooterLink = styled.a`
   background-color: transparent;
-  color: #FFF;
+  color: var(--white);
   text-decoration: none;
   font-size: 1.25rem;
   padding: 15px 30px;
-  border: 3px solid #FFF;
+  border: 3px solid var(--white);
   border-radius: 40px;
   cursor: pointer;
   display: inline-block;
   margin-top: 10px;
+  transition: background-color .2s;
 
   &:hover {
-    border-color: orange;
+    background-color: var(--white);
+    color: var(--darkBlue);
   }
 `
 
