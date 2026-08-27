@@ -4,14 +4,13 @@ const navLinks = [
   { label: "ABOUT", href: "#about" },
   { label: "EXPERIENCE", href: "#experience" },
   { label: "SKILLS", href: "#skills" },
-  { label: "CONTACT", href: "#contact" },
 ]
 
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-bg/90 backdrop-blur">
       <div className="mx-auto flex max-w-2xl items-center justify-between px-6 py-2">
-        <a href="#top" className="font-serif text-lg font-semibold tracking-tight" aria-label="Kevin Eze — home">
+        <a href="#top" className="font-serif text-xl font-semibold tracking-tight" aria-label="Kevin Eze — home">
           Kevin Eze
         </a>
 
