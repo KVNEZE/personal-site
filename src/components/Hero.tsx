@@ -6,8 +6,8 @@ export function Hero() {
       id="top"
       className="relative mx-auto flex max-w-2xl flex-col items-start gap-8 px-6 py-16 sm:flex-row sm:items-start sm:gap-10 sm:py-24"
     >
-      <h1 className="animate-fade-slide-up shrink-0">
-        <img src="/kevin-signature.png" alt="Kevin Eze" className="h-40 w-auto sm:h-56 md:h-64" />
+      <h1 className="shrink-0">
+        <img src="/kevin-signature.svg" alt="Kevin Eze" className="h-72 w-auto sm:h-64 md:h-72" />
       </h1>
       <div className="sm:pt-4">
         <p className="font-serif text-lg text-muted sm:text-xl">
