@@ -21,7 +21,13 @@ export function Experience() {
               </a>
             </h3>
             <p className="mt-1 text-sm font-medium tracking-wide text-muted">{entry.period}</p>
-            <p className="mt-3 text-lg leading-relaxed text-ink/90">{entry.summary}</p>
+            <div className="mt-3 space-y-3">
+              {entry.summary.map((paragraph, index) => (
+                <p key={index} className="text-lg leading-relaxed text-ink/90">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
             <ul className="mt-4 flex flex-wrap gap-2">
               {entry.tags.map((tag) => (
                 <li
